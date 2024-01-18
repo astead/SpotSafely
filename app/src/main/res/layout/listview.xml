@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:textSize="23sp"
+    android:layout_width="300dp"
+    android:layout_height="48dp"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="6dip"
+    android:paddingRight="47dp"
+    android:textColor="@color/black"
+    android:background="@drawable/blue_list_item"
+    android:layout_centerHorizontal="true"
+    android:lines="1"
+    android:singleLine="true"
+    android:ellipsize="end"
+    />
+

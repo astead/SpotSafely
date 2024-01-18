@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id ="@+id/main_layout">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id ="@+id/main_background"
+        android:src="@drawable/fire_engine"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image_of_fire_truck" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/driver_or_spotter"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:width="300dp"
+        android:padding="15dp"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start"
+        android:textSize="40dp"
+        android:width="300dp"
+        android:layout_below="@+id/txtInfo" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/join"
+        android:textSize="40dp"
+        android:width="300dp"
+        android:layout_below="@+id/btnStart" />
+
+    <Button
+        android:id="@+id/simpleButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/button"
+        android:textSize="40dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/btnJoin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
